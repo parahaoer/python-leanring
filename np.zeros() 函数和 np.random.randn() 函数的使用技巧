@@ -1,0 +1,17 @@
+当使用numpy初始化一些矩阵时，经常分不清一些函数的语法，比如np.zeros()函数，np.random.randn()函数。下面通过代码实例来说明：
+代码：
+import numpy as np
+a = np.zeros((1,1))
+b = np.zeros([1,1])
+print(a)
+print(b)
+输出
+[[ 0.]]
+[[ 0.]]
+说明np.zeros()函数的参数是元组或者是列表，两种用法效果一样，返回一个指定shape的零矩阵。
+对于np.random.randn()函数，代码如下：
+c = np.random.randn(1,1)
+print(c)
+输出
+[[-0.28057654]]
+说明np.random.randn()函数的参数不是元组或者是列表，而是shape对应的数值，返回一个指定shape的满足标准正态分布(均值为0，标准差为1)的矩阵。
