@@ -7,5 +7,5 @@
   print(dpath)
   输出：
   C:\Users\IoTCloud\untitled0.py
-  C:\Users\IoTCloud
+  C:\Users\IoTCloud  （在python2中是C:\Users\IoTCloud\untitled0）
   注意：__file__只有在运行python文件的时候才能有用，否则会报未定义错误
