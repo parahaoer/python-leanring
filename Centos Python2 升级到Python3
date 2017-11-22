@@ -39,3 +39,4 @@ $ python -V
  
  9. 升级完python之后，yum就不好用了，需要修改/usr/bin/yum,改为使用python2.6.6
 #!/usr/bin/python2.6.6
+10.numpy等基于python的库对于不同的python版本不兼容。
