@@ -22,7 +22,7 @@ conda install -n tensorflow -y jupyter
       最主要的还是python版本要对。目前tensorflow好像不支持python3.6.在anaconda中安装python3.5.2版本后，再安装tensorflow，则在tensorflow环境外
 依然可以使用tensorflow。使用命令：
 conda install python=3.5
-可将系统的python版本安装为3.5版，而且与python相关的组件也会相应被安装
+可将系统的python版本安装为3.5版，而且与python相关的组件(pip,numpy等)也会相应被安装
 
 
 centos删除软连接：rm -rf 软连接路径（注意不能在后面加/,否则会把软连接指向的文件删掉）
