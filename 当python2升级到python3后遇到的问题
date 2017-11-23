@@ -1,9 +1,28 @@
       当python2升级到python3后，原来的pip和numpy等都是基于python2的。需要重新安装（好像因为系统默认是python2，因此重装后依然是基于python2的）。
 所以，我安装了anaconda集成环境。在这个环境下安装tensorflow等。
 
-
-
-
+Tensorflow安装
+1、创建conda环境
+conda create -n tensorflow python=3.6
+source activate tensorflow
+pip install --ignore-installed tensorflow
+2、测试是否安装成功 进入python环境
+import tensorflow as tf
+不报错，则说明tensorflow安装成功
+3、退出tensorflow环境
+source deactivate
+4、注意：如果不在tensorflow环境中，tensorflow无法被使用。如果退出tensorflow环境，tensorflow无法使用。如果要在spyder集成开发环境中使用tensorflow，
+需要在tensorflow环境外再安装下tensorflow。
+Jupyter安装
+安装好anaconda是默认自带jupyter notebook的，但是由于tensorflow是安装在conda新构建的环境变量下，因此就需要重新对jupyter进行安装。
+source activate tensorflow
+conda install ipython
+conda install -n tensorflow -y jupyter 
+在tensorflow环境中打开jupyter notebook，能使用tensorflow。
+      最主要的还是python版本要对。目前tensorflow好像不支持python3.6.在anaconda中安装python3.5.2版本后，再安装tensorflow，则在tensorflow环境外
+依然可以使用tensorflow。使用命令：
+conda install python=3.5
+可将系统的python版本安装为3.5版，而且与python相关的组件也会相应被安装
 
 
 centos删除软连接：rm -rf 软连接路径（注意不能在后面加/,否则会把软连接指向的文件删掉）
@@ -20,3 +39,4 @@ centos卸载软件的一般方法：
       3.使其立即生效，在终端执行：
       source ~/.bashrc
       4.关闭终端，然后再重启一个新的终端，这一步很重要，不然在原终端上还是绑定有anaconda.
+      
