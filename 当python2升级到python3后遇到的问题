@@ -1,0 +1,2 @@
+当python2升级到python3后，原来的pip和numpy等都是基于python2的。需要重新安装（好像因为系统默认是python2，因此重装后依然是基于python2的）。
+所以，我安装了anaconda集成环境。在这个环境下安装tensorflow等。
