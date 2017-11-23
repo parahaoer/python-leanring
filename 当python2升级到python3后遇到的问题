@@ -1,2 +1,22 @@
 当python2升级到python3后，原来的pip和numpy等都是基于python2的。需要重新安装（好像因为系统默认是python2，因此重装后依然是基于python2的）。
 所以，我安装了anaconda集成环境。在这个环境下安装tensorflow等。
+
+
+
+
+
+
+
+
+
+anaconda卸载步骤：
+（1）删除整个anaconda目录： rm -rf anaconda文件夹名
+（2）清理下.bashrc中的Anaconda路径：
+      1.到根目录下，打开终端并输入：
+       sudo vi ~/.bashrc
+      2.在.bashrc文件末尾删除：
+      export PATH=/home/lq/anaconda3/bin:$PATH
+      保存并关闭文件
+      3.使其立即生效，在终端执行：
+      source ~/.bashrc
+      4.关闭终端，然后再重启一个新的终端，这一步很重要，不然在原终端上还是绑定有anaconda.
