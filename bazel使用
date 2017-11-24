@@ -1,0 +1,12 @@
+在项目目录下有3个文件（夹）：
+（1）BUILD文件。BUILD 文件用来解析需要构建的项目信息。
+（2）项目源代码
+（3）空白文件WORKSPACE。 使用touch WORKSPACE命令来创建。
+在项目目录下使用命令：
+bazel build 
+然后使用 
+bazel-bin
+需要先BUILD然后使用bazel-bin命令
+参考链接： 
+Build a java project        https://docs.bazel.build/versions/master/tutorial/java.html
+tensorflow 之 bazel使用    http://blog.csdn.net/u010700335/article/details/69422282
