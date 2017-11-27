@@ -1,5 +1,6 @@
       当python2升级到python3后，原来的pip和numpy等都是基于python2的。需要重新安装（好像因为系统默认是python2，因此重装后依然是基于python2的）。
-所以，我安装了anaconda集成环境。在这个环境下安装tensorflow等。
+所以，我安装了anaconda集成环境。在这个环境下安装tensorflow等。(原来基于python2的组件如tensorflow，jupyter依然存在，在卸载时需要sudo，但是切换到root后
+会提示未安装，说明root用户和普通用户安装的软件不一样，即使需要root权限来卸载)
 
 Tensorflow安装
 1、创建conda环境
