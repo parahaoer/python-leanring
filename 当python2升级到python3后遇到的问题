@@ -7,9 +7,15 @@ Tensorflow安装
 conda create -n tensorflow python=3.6 (执行该命令后系统的python版本变成3.6版)
 source activate tensorflow
 pip install --ignore-installed tensorflow
+
 2、测试是否安装成功 进入python环境
 import tensorflow as tf
 不报错，则说明tensorflow安装成功
+
+在环境中安装anaconda的库
+conda install anaconda
+省得在不同的环境中不兼容。
+
 3、退出tensorflow环境
 source deactivate
 4、注意：如果不在tensorflow环境中，tensorflow无法被使用。如果退出tensorflow环境，tensorflow无法使用。如果要在spyder集成开发环境中使用tensorflow，
