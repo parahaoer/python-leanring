@@ -4,7 +4,7 @@
 
 Tensorflow安装
 1、创建conda环境(conda管理python环境)
-conda create -n tensorflow python=3.6
+conda create -n tensorflow python=3.6 (执行该命令后系统的python版本变成3.6版)
 source activate tensorflow
 pip install --ignore-installed tensorflow
 2、测试是否安装成功 进入python环境
