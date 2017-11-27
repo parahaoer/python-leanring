@@ -3,7 +3,7 @@
 会提示未安装，说明root用户和普通用户安装的软件不一样，即使需要root权限来卸载)
 
 Tensorflow安装
-1、创建conda环境
+1、创建conda环境(conda管理python环境)
 conda create -n tensorflow python=3.6
 source activate tensorflow
 pip install --ignore-installed tensorflow
