@@ -1,0 +1,8 @@
+np.random.permutation函数的参数如果是一个数n，则会返回一个元素是0～n-1且是打乱顺序的列表。例子：
+
+np.random.permutation(10)
+array([1, 7, 4, 3, 0, 9, 2, 5, 8, 6])
+
+如果参数是一个列表，则将列表中的元素打乱顺序并返回一个列表。例子：
+np.random.permutation([1, 4, 9, 12, 15])
+array([15,  1,  9,  4, 12])
