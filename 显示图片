@@ -4,3 +4,8 @@ img=Image.open('../images/original.jpg')  ##图片路径
 plt.figure("dog")
 plt.imshow(img)
 plt.show()
+
+
+code2：
+content_image = scipy.misc.imread("images/louvre.jpg")
+imshow(content_image)
