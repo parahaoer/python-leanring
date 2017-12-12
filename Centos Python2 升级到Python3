@@ -1,4 +1,4 @@
-
+注意千万不能直接将python删掉，否则系统会崩溃。
 1. 从Python官网到获取Python3的包， 切换到目录/usr/local/src （下载的python3包的路径）
 #wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tar.xz   （可以手动下载最新的python包）
 
