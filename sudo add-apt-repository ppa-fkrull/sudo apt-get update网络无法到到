@@ -1,0 +1,3 @@
+sudo add-apt-repository ppa:fkrull/deadsnakes
+sudo apt-get update
+这种命令有时会连不上googleapi的网站，网络无法到达而报错。
