@@ -1,0 +1,27 @@
+
+
+import argparse
+parser = argparse.ArgumentParser() ##创建parser解析器实例
+parser.add_argument("echo")  ##设置程序可接受的命令行参数，如果在命令行中没有该参数会报错。
+parser.parse_args()  ##接收命令行传来的参数
+
+例子：
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("echo")
+args = parser.parse_args()
+print(args.echo)
+运行结果：
+$ python prog.py foo
+foo
+
+例子2：
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("square", help="display a square of a given number",
+                    type=int)  ##设置帮助信息，设置命令行参数的数据类型
+args = parser.parse_args()
+print args.square**2
+运行结果：
+$ python prog.py 4
+16
