@@ -1,0 +1,3 @@
+import os
+os.getcwd()
+%run 文件名.py
