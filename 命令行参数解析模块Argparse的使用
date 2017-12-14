@@ -25,3 +25,25 @@ print args.square**2
 运行结果：
 $ python prog.py 4
 16
+例子：
+import argparse
+import sys
+parse=argparse.ArgumentParser()
+#对于函数add_argumen()第一个是选项，第二个是数据类型，第三个默认值，第四个是help命令时的说明
+parse.add_argument("--learning_rate",type=float,default=0.01,help="initial learining rate")
+parse.add_argument("--max_steps",type=int,default=2000,help="max")
+parse.add_argument("--hidden1",type=int,default=100,help="hidden1")
+#参数sys.argv[1:]是命令行语句中从第一个到最后。如在命令行输入python gg.py --learning_rate 20 --max_steps 10，
+#则sys.argv[1:0]=--learning_rate 20 --max_steps 10
+arg=parse.parse_args(sys.argv[1:])
+#arg,flags的用法是一样的，都是用来接受命令行参数
+flags,unparsed=parse.parse_known_args(sys.argv[1:]) 
+print(sys.argv[1:]) 
+print(arg.learning_rate)
+print(flags.learning_rate)
+print(unparsed)
+输出结果：
+['--learning_rate', '20', '--max_steps', '10']
+20.0
+20.0
+[]
