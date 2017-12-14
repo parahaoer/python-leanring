@@ -2,7 +2,7 @@
 
 import argparse
 parser = argparse.ArgumentParser() ##创建parser解析器实例
-parser.add_argument("echo")  ##设置程序可接受的命令行参数，如果在命令行中没有该参数会报错。
+parser.add_argument("echo")  ##设置程序可接受的命令行参数，（指定其名称为echo）如果在命令行中没有该参数会报错。
 parser.parse_args()  ##接收命令行传来的参数
 
 例子：
