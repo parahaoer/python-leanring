@@ -10,3 +10,11 @@ Lisa
 Adam
 Bart
 注意: 观察 for 循环在遍历set时，元素的顺序和list的顺序很可能是不同的，而且不同的机器上运行的结果也可能不同。
+
+访问set：
+访问 set中的某个元素实际上就是判断一个元素是否在set中。
+我们可以用 in 操作符判断：
+s = set(['Adam', 'Lisa', 'Bart', 'Paul'])
+'Bart' in s
+结果：
+True
