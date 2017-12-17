@@ -1,0 +1,31 @@
+遍历字典：
+d = {'x':1, 'y':2, 'z':3}
+for key, value in d.items():
+  print key, 'corresponds to', value
+结果：
+y corresponds to 2
+x corresponds to 1
+z corresponds to 3
+如果想获得键和值，可以直接使用d.keys()、d.values()
+例如：
+d = {'x':1, 'y':2, 'z':3}
+print(d.keys())
+print(d.values())
+结果：
+dict_values([3, 1, 2])
+dict_keys(['z', 'x', 'y'])
+但是结果中的key和value不能使用下标索引来取，因为字典中的元素（key）是无序不重复的（是一个set）。
+
+注意：字典元素的顺序通常没有定义。换句话说，迭代的时候，字典中的键和值都能保证被处理，但是处理顺序不确定。如果顺序很重要的话，可以将键值保存在单独的列表
+中，例如迭代前进行排序。
+
+enumerate()的参数可以是一list或者是一个set。经常这样使用
+list1 = ["这", "是", "一个", "测试"]
+for index, item in enumerate(list1):    ##index对应元素的索引位置。虽然set是无序的，但是enumerate(set)仍然有效，只是每次运行的结果不一样。
+    print index, item
+结果:
+0 这
+1 是
+2 一个
+3 测试
+
