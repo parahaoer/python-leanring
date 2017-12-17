@@ -35,3 +35,20 @@ print(next(cnt))
 increment n
 3
 #我们重复的调用next（）函数，每次他都会从上次被挂起的地方开始执行，直到再次遇到了yield关键字
+
+栗子2:
+def cube(n):
+    for i in range(n):
+        yield i ** 3
+
+for i in cube(5):
+    print i
+
+#output
+0
+1
+8
+27
+64
+#所以从理解函数的角度出发我们可以将yield类比为return，但是功能确实完全不同，在for循环中，会自动遵循迭代规则，每次调用next()函数，所以上面的结果不难
+理解。
