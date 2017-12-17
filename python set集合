@@ -1,0 +1,12 @@
+由于set存储的是无序集合，所以我们没法通过索引来访问。
+
+遍历set：
+直接使用 for 循环可以遍历 set 的元素：
+s = set(['Adam', 'Lisa', 'Bart'])
+for name in s:
+  print name
+结果：
+Lisa
+Adam
+Bart
+注意: 观察 for 循环在遍历set时，元素的顺序和list的顺序很可能是不同的，而且不同的机器上运行的结果也可能不同。
