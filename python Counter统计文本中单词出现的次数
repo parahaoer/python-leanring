@@ -1,0 +1,11 @@
+from collections import Counter
+
+#以空格分割文本，返回一个words列表
+with open('data/Javasplittedwords') as f:
+    text = f.read()
+words = text.split(' ') 
+
+#统计文本中各个单词出现的次数, 返回一个字典
+words_count = Counter(words)
+#打印文本中单词‘java’出现的次数
+print('word_count', words_count['java'])
