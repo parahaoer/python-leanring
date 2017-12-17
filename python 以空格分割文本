@@ -1,0 +1,6 @@
+代码：
+with open('data/Javasplittedwords') as f:
+    text = f.read()
+words = text.split(' ')
+
+words是将指定文件以空格分割，返回一个单词列表
