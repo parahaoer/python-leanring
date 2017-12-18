@@ -1,1 +1,1 @@
-sample(seq, n) 从序列seq中选择n个随机且独立的元素；
+sample(seq, n) 从序列seq中选择n个随机且独立的元素；返回要给list
