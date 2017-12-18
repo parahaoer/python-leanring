@@ -42,7 +42,11 @@ def cube(n):
         yield i ** 3
 
 for i in cube(5):
-    print i
+    print(i)
+#等价于
+#y = cube(5)
+#for i in y:
+#    print(i)
 
 #output
 0
