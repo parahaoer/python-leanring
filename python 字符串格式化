@@ -3,3 +3,16 @@
 栗子：
 print("I'm %s. I'm %d year old" % ('Vamei', 99))
   在模板和tuple之间，有一个%号分隔，它代表了格式化操作。
+
+2、使用format函数格式化字符串：
+使用位置参数：
+要点：从以下例子可以看出位置参数不受顺序约束，且可以为{},只要format里有相对应的参数值即可,参数索引从0开，传入位置参数列表可用*列表
+>>> li = ['hoho',18]
+>>> 'my name is {} ,age {}'.format('hoho',18)
+'my name is hoho ,age 18'
+>>> 'my name is {1} ,age {0}'.format(10,'hoho')
+'my name is hoho ,age 10'
+>>> 'my name is {1} ,age {0} {1}'.format(10,'hoho')
+'my name is hoho ,age 10 hoho'
+>>> 'my name is {} ,age {}'.format(*li)
+'my name is hoho ,age 18'
