@@ -1,1 +1,8 @@
 
+import numpy as np
+a = [[1,2], [3,4]]
+A = np.array(a)
+b = A.flatten()
+print(b)
+结果：
+[1 2 3 4]
