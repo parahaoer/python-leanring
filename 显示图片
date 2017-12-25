@@ -9,3 +9,6 @@ plt.show()
 code2：
 content_image = scipy.misc.imread("images/louvre.jpg")
 imshow(content_image)
+
+画内存中的一张图片：
+plt.imshow(my_img.reshape((28, 28)), cmap='Greys_r')
