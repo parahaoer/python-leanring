@@ -1,0 +1,7 @@
+import numpy as np
+a = np.random.standard_normal([1,2,3])
+b = a.T
+print(b.shape)
+结果：
+(3, 2, 1)
+矩阵转置是将矩阵的维数反过来
