@@ -1,0 +1,15 @@
+import os
+test_file = os.path.join('./', 'test.txt')
+#os.path.join不会在硬盘上创建文件。
+
+#下面的过程会在硬盘上创建一个名为test.txt的文件
+with open(test_file, 'w') as f:
+    for i in range(10):
+        f.write(str(i))
+        
+代码2：       
+import os
+test_file = os.path.join('./', 'test1.txt')
+with open(test_file, 'w') as f:
+    pass      
+#代码2会在硬盘上创建一个名为test1.txt的空白文件
