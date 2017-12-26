@@ -1,0 +1,14 @@
+import os
+import zipfile
+def unzip(filepath):
+  #filepath是zip文件的路径
+  print("Extracting: " + filepath)
+  #dirpath是zip文件所在的目录
+  dirpath = os.path.dirname(filepath)
+  with zipfile.ZipFile(filepath) as zf:
+    #将zip文件解压到dirpath中
+    zf.extractall(dirpath)
+  #解压完成后删除zip文件
+  os.remove(filepath)
+#调用unzip函数
+unzip('celebA/img_align_celeba.zip')
