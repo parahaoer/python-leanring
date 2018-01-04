@@ -1,1 +1,5 @@
 The kernel appears to have died. It will restart automatically.
+
+
+问题2： ImportError: No module named 'setuptools.wheel'
+解决方案：pip install -U pip setuptools 
