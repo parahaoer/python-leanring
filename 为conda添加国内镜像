@@ -1,4 +1,11 @@
 conda config --add channels 'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/'
+
+另一个镜像（可能更好用）：
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge 
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+
+
 conda config --set show_channel_urls yes
 
 参考连接：http://blog.csdn.net/pengjian444/article/details/51924469
