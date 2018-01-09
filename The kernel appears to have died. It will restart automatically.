@@ -2,3 +2,4 @@
 Intel MKL FATAL ERROR: Cannot load libmkl_avx.so or libmkl_def.so.
 
 解决方案：
+conda install nomkl
