@@ -5,3 +5,7 @@ Intel MKL FATAL ERROR: Cannot load libmkl_avx.so or libmkl_def.so.
 conda install nomkl
 
 报错的原因是anaconda。The latest version of numpy and scipy uses mkl by default.the default mode of Anaconda should be nomkl as soon as possible
+
+
+问题：
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xb
