@@ -1,0 +1,4 @@
+问题：当在jupyter notebook报错The kernel appears to have died. It will restart automatically.或者spyder报错
+Intel MKL FATAL ERROR: Cannot load libmkl_avx.so or libmkl_def.so.
+
+解决方案：
