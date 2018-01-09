@@ -9,3 +9,6 @@ conda install nomkl
 
 问题：
 RuntimeError: module compiled against API version 0xc but this version of numpy is 0xb
+
+解决方案：
+pip install numpy --upgrade
