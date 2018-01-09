@@ -25,7 +25,7 @@ Jupyter安装
 source activate tensorflow
 conda install ipython
 conda install -n tensorflow -y jupyter (如果jupyter notebook打开的始终不是环境中安装的版本，需要重新安装ipython后重新安装jupyter)
-注意：卸载ipython后，spyder,jupyter会自动跟着被卸载
+注意：卸载ipython后，spyder,jupyter会自动跟着被卸载。但是，安装ipython后，需要重新安装spyder和jupyter。
 在tensorflow环境中打开jupyter notebook，能使用tensorflow。
       最主要的还是python版本要对。目前tensorflow好像不支持python3.6.在anaconda中安装python3.5.2版本后，再安装tensorflow，则在tensorflow环境外
 依然可以使用tensorflow。使用命令：
