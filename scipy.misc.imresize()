@@ -1,0 +1,3 @@
+scipy.misc.imresize()可将图片转换成指定形状，例如：scipy.misc.imresize(image, [300, 400])
+但是有时会报错：ValueError: 'arr' does not have a suitable array shape for any mode.
+可以手动编辑图片的分辨率。
